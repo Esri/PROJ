@@ -11,6 +11,7 @@ defines {
 
 includedirs {
   "include",
+  "../sqlite",
 }
 
 files {
