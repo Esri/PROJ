@@ -1238,7 +1238,7 @@ static std::string pj_get_relative_share_proj_internal_no_check() {
     HMODULE hm = NULL;
     if (GetModuleHandleEx(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS |
                               GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT,
-                          (TCHAR*)&pj_get_relative_share_proj, &hm) == 0) {
+                          (TCHAR const*)&pj_get_relative_share_proj, &hm) == 0) {
         return std::string();
     }
 
