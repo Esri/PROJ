@@ -11,17 +11,20 @@ defines {
 
 includedirs {
   "include",
+  "src",
   "../sqlite",
 }
 
 files {
-  "src/*.h",
-  "src/*.c",
-  "src/*.hpp",
-  "src/*.cpp",
+  "src/**.h",
+  "src/**.c",
+  "src/**.hpp",
+  "src/**.cpp",
 }
 
 excludes {
+   "src/apps/**",
+   "src/tests/**",
 }
 
 if (_PLATFORM_ANDROID) then
