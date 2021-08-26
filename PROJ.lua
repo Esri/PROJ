@@ -16,10 +16,10 @@ includedirs {
 }
 
 files {
-  "src/**.h",
-  "src/**.c",
-  "src/**.hpp",
-  "src/**.cpp",
+  "src/*.h",
+  "src/*.c",
+  "src/*.hpp",
+  "src/*.cpp",
 }
 
 excludes {
