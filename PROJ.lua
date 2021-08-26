@@ -25,6 +25,8 @@ files {
 excludes {
    "src/apps/**",
    "src/tests/**",
+   "src/filemanager.cpp",
+   "src/filemanager.hpp",
 }
 
 if (_PLATFORM_ANDROID) then
