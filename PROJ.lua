@@ -1,13 +1,10 @@
-project "PROJ"
+project "proj"
 
 dofile(_BUILD_DIR .. "/static_library.lua")
 
 configuration { "*" }
 
-uuid "E63D9AD5-9F32-4772-B710-38EFF074067C"
-
-defines {
-}
+uuid "C55EEF6D-481B-436F-BECF-F92DF3D492C5"
 
 includedirs {
   "include",
@@ -23,10 +20,10 @@ files {
 }
 
 excludes {
-   "src/apps/**",
-   "src/tests/**",
-   "src/filemanager.cpp",
-   "src/filemanager.hpp",
+  "src/apps/**",
+  "src/tests/**",
+  "src/filemanager.cpp",
+  "src/filemanager.hpp",
 }
 
 if (_PLATFORM_ANDROID) then
