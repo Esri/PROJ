@@ -12,11 +12,11 @@ class PROJConan(ConanFile):
     settings = "platform_architecture_target"
 
     def package(self):
-        base = self.source_folder + "src/"
+        base = self.source_folder + "/"
         relative = "3rdparty/PROJ/"
 
         # headers
-        self.copy("src/proj.h", src=base + "src", dst=relative)
+        self.copy("proj.h", src=base + "src", dst=relative + "src")
  
         # libraries
         output = "output/" + str(self.settings.platform_architecture_target) + "/staticlib"
