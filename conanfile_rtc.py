@@ -16,7 +16,7 @@ class PROJConan(ConanFile):
         relative = "3rdparty/PROJ/"
 
         # headers
-        self.copy("proj.h", src=base + "src", dst=relative)
+        self.copy("src/proj.h", src=base + "src", dst=relative)
  
         # libraries
         output = "output/" + str(self.settings.platform_architecture_target) + "/staticlib"
