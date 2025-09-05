@@ -1,16 +1,16 @@
-project "png"
+project "proj"
 
 dofile(_BUILD_DIR .. "/static_library.lua")
 
 configuration { "*" }
 
-uuid "BBB2B003-6593-4409-B5CB-0AF7AAB203CE"
+uuid "8488B1F9-DFFB-4759-B2DB-DC8AF712B7E6"
 
 flags { "NoPCH" }
 
 includedirs {
-  "libpng",
-  _3RDPARTY_DIR .. "/zlib-ng",
+  "include",
+  "src",
 }
 
 defines {
