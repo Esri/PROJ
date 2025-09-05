@@ -10,6 +10,7 @@ flags { "NoPCH" }
 
 includedirs {
   "include",
+  "build/src",
   "src",
 }
 
