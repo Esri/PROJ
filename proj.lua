@@ -9,9 +9,10 @@ uuid "8488B1F9-DFFB-4759-B2DB-DC8AF712B7E6"
 flags { "NoPCH" }
 
 includedirs {
-  "include",
-  "build/src",
-  "src",
+  _3RDPARTY_DIR .. "/PROJ/include",
+  _3RDPARTY_DIR .. "/PROJ/build/src",
+  _3RDPARTY_DIR .. "/PROJ/src",
+  _3RDPARTY_DIR .. "/sqlite",
 }
 
 defines {
