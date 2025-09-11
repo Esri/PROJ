@@ -1,3 +1,11 @@
+# Esri instructions
+
+`cmake .. -DBUILD_APPS=OFF -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=OFF -DENABLE_CURL=OFF -DENABLE_TIFF=ON -DEMBED_PROJ_DATA_PATH=OFF
+-DEMBED_RESOURCE_FILES=ON -DUSE_ONLY_EMBEDDED_RESOURCE_FILES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja`
+
+`cmake .. -DBUILD_APPS=OFF -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=OFF -DENABLE_CURL=OFF -DENABLE_TIFF=OFF -DEMBED_PROJ_DATA_PATH=OFF
+-DEMBED_RESOURCE_FILES=ON -DUSE_ONLY_EMBEDDED_RESOURCE_FILES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja -DSQLite3_INCLUDE_DIR=/Users/chri7325/Downloads/sqlite -DSQLite3_LIBRARY=/Users/chri7325/Downloads/sqlite3.dll`
+
 # PROJ
 
 [![Coveralls Status](https://coveralls.io/repos/github/OSGeo/PROJ/badge.svg?branch=master)](https://coveralls.io/github/OSGeo/PROJ?branch=master)
@@ -72,4 +80,3 @@ automatically fetch resource files that are not present locally from the CDN.
 ## Citing PROJ in publications
 
 See [CITATION](CITATION)
-
