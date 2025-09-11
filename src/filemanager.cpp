@@ -1403,7 +1403,7 @@ static std::string pj_get_relative_share_proj_internal_no_check() {
 #ifdef _WIN32
     HMODULE hm = NULL;
 #if !UWP
-    if (GetModuleHandleEx(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS |
+    if (GetModuleHandleExA(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS |
                               GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT,
                           (LPCSTR)&pj_get_relative_share_proj, &hm) == 0) {
         return std::string();
